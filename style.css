@@ -8,7 +8,6 @@ body {
   .logo {
     width: 150px;
     height: 150px;
-    margin: 3% 10%;
   }
 
   header {
@@ -60,12 +59,12 @@ body {
     width: 389px;
     height: 469px;
     border-radius: 20%;
-    margin: 5% auto;
   }
 
   h1 {
     color:black;
     text-align: center;
+    margin:0px;
   }
 
   h2 {
@@ -121,5 +120,6 @@ body {
         font-weight:700;
         background-image: url("noise_texture_footer.png");
         background-repeat: repeat;
+        color:black;
 
     }
