@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: proxima-nova, sans-serif;
+    font-weight:700;
+    background-image: url("noise_texture.png");
+    background-repeat: repeat;
   }
   /* What kind of selector is this? */
   .logo {
@@ -20,8 +20,6 @@ body {
   main {
     height: auto;
     width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
   }
 
   /* This is an element within and element selector */ 
@@ -30,8 +28,9 @@ body {
     height: 10%;
     width: 15%;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 100%;
+    font-weight: 700;
     border-radius: 25px;
     background: transparent;
     padding: 20px;
@@ -41,10 +40,14 @@ body {
 
   .has-border {
     border-radius: 25px;
-    border: 2px solid #0795C3;
-    background: none;
+    background: #DE781F;
     padding: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
   }
+
+.has-border:hover {opacity:1}
+
 
   nav {
     display: flex;
@@ -54,18 +57,15 @@ body {
   }
   /* This is an ID selector */
   #profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 15% auto;
-    grid-column: 2/3;
+    width: 389px;
+    height: 469px;
+    border-radius: 20%;
+    margin: 5% auto;
   }
 
   h1 {
-    color:white;
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid #1940A9;;
+    color:black;
+    text-align: center;
   }
 
   h2 {
@@ -79,20 +79,47 @@ body {
     color: white;
     font-size: 10px;
     margin: 3% auto;
+    text-align: right;
   }
 
-  button {
-    grid-column: 2/3;
+ /* button {
     margin: 3% auto;
     width: 70%;
     height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: proxima-nova, sans-serif;
     font-size: 20px;
-    border-radius: 25px;
+    font-weight: 700
+    border-radius: 50px;
     background: transparent;
-    padding: 20px;
+    padding: 2px;
     padding-bottom: 5%;
     text-align: center;
     color: black;
     letter-spacing: 2px;
       }
+      */
+
+      .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+   
+    .footer {
+        display:flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        width: 100%;
+        border-top: 1px solid white;
+        justify-content:center;
+           align-items:center;
+        font-family: proxima-nova, sans-serif;
+        font-weight:700;
+        background-image: url("noise_texture_footer.png");
+        background-repeat: repeat;
+
+    }
